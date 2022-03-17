@@ -3,7 +3,7 @@
 % !TeX root = slides.tex
 
 
-\documentclass[11pt, t, usernames, dvipsnames, 
+\documentclass[11pt, t, usernames, dvipsnames,
 	aspectratio=169, %% for widescreen (16:9) presentations
 %	aspectratio=43,  %% for traditional (4:3) presentations
 %	handout          %% for beamer handout mode
@@ -22,8 +22,8 @@
 
 %% set theme options
 \usetheme[
-%	totalframenumber, 
-	sectionslide, 
+%	totalframenumber,
+	sectionslide,
 %	sectiontoc,
 %	titleimage=figures/bg.jpg,
 ]{uniS}
@@ -31,8 +31,8 @@
 
 %% specify mandatory information
 \title[Title footer]{Title}
-\author[Author footer]{Author}
-\email{example@email.com}
+\author[Alexander Van Craen]{Alexander Van Craen}
+\email{Alexander.Van-Craen@ipvs.uni-stuttgart.de}
 
 
 %% optionally specifiy intsitute and department
@@ -41,22 +41,21 @@
 %%     - logo=...: path to the logo image
 %%     - url=...: full URL to the website; if not provided, it will be tried to generate the URL automatically
 %% example: \institute[logo=path/to/logo.png, url=https://www.ipvs.uni-stuttgart.de/]{Institute for Parallel and Distributed Systems}{IPVS}
-\institute{Institute}{Institute Abbreviation}
-\department{Department}{Department Abbreviation}
+\institute{Institute for Parallel and Distributed Systems}{IPVS}
+\department{Scientific Computing}{SC}
 
 %% other optional information for the final slide
 %% optional argument:
 %%     - labeltxt=...: changes the icons to text, default dependent on set language
-\phone{+49 711 123-00000}
-\fax{+49 711 123-00000}
-\address{Street 1}{70569 Stuttgart, Germany}{0.000}
+\phone{+49 711 685 88260}
+\address{Universitätsstraße 38}{70569 Stuttgart, Germany}{2.209}
 \officehours{on appointment}
-\website{example.website.com}
+\website{www.ipvs.uni-stuttgart.de/de/institut/team/Van-Craen/}
 
 %% optionally ad an ORCID iD (https://orcid.org/)
 %% optional argument:
 %%     - type=full|compact: change from full (default) ORCID iD display (including, e.g., https) to a compact one
-\orcid{0000-0000-0000-0000}
+\orcid{0000-0002-3336-7226}
 
 %% set speaker image
 %\speakerimage{figures/speaker.jpg}
@@ -68,7 +67,7 @@
 
 %% enable "Creative Common License" badged on title slide (https://creativecommons.org/)
 %% supported licenses (required argument): by, by-nc, by-nc-nd, by-nc-sa, by-nd, by-sa, cc-zero
-%% optional arguments: 
+%% optional arguments:
 %%     - version=4.0|3.0|2.5|2.0|1.0: set the CC license version (default: 4.0) for the url
 %%     - currency=EUR|USD: change the currecny icon (default: EUR) in the CC license badget
 %% example: \cclicense[version=4.0, currency=EUR]{by-nc-nd}
@@ -81,23 +80,23 @@
 \begin{document}
     %% create title slide
 	\titleslide
-	
+
 	%% create table of contents slide
-	%% optional argument: 
+	%% optional argument:
 	%%     - title=...: changes the title, default dependent on set language
 	%% example: \tocslide[title=Table of Contents]
 	\tocslide
-	
-	
-	
+
+
+
 	% CONTENT
 	\input{content/content}
-	
-	
-	
+
+
+
 	%% create final slide containing information about the speaker
 	\finalslide
-	
+
 	%% create appendix slides
 	%% required argument: tex file containing the appendix frames
 	%% optional arguments:
